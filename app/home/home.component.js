@@ -13,7 +13,7 @@ var HomeComponent = (function () {
     function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
-        gettool()();
+        window.gettool()();
     };
     HomeComponent = __decorate([
         core_1.Component({

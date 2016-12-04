@@ -149,8 +149,8 @@ function gettool() {
     return function aa(width, height) {
         var canvas = document.getElementById("canvas");
         var context = canvas.getContext("2d");
-        WINDOW_HEIGHT = 700;
-        WINDOW_WIDTH = 1400;
+        WINDOW_HEIGHT = window.innerHeight-60;
+        WINDOW_WIDTH = WINDOW_WIDTH-180;
         canvas.height = WINDOW_HEIGHT;
         canvas.width = WINDOW_WIDTH;
 
