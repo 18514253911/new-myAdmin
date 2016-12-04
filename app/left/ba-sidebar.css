@@ -1,0 +1,8 @@
+.ba-sidebar {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    top: 60px;
+    left: 0;
+    background-color: #282828;
+}

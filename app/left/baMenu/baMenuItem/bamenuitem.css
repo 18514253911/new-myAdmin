@@ -1,0 +1,11 @@
+.list_ul {
+    list-style-type: none;
+    color: white;
+}
+
+.list_menu_item_div:hover {
+    transition: background-color .15s, box-shadow .15s;
+    cursor: pointer;
+    background-color: #e7f4f9!important;
+    color: black;
+}

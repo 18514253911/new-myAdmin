@@ -1,0 +1,8 @@
+<li class="list_menu_item">
+    <div class="list_menu_item_div">
+        <span>{{menuItem.name}}</span>
+    </div>
+    <ul class=" list_ul " *ngIf="menuItem.children ">
+        <ba-menu-item *ngFor="let subItem of menuItem.children " [menuItem]="subItem "></ba-menu-item>
+    </ul>
+</li>
