@@ -18,13 +18,14 @@ var bamenu_component_1 = require('./left/baMenu/bamenu.component');
 var bamenuitem_component_1 = require('./left/baMenu/baMenuItem/bamenuitem.component');
 var app_routing_1 = require('./app.routing');
 var home_component_1 = require('./home/home.component');
+var game_component_1 = require('./game/game.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule, app_routing_1.default],
-            declarations: [app_component_1.AppComponent, app_bannercomponent_1.BaPageTop, app_leftcomponent_1.BaSidebar, bamenu_component_1.BaMenu, bamenuitem_component_1.BaMenuItem, home_component_1.HomeComponent],
+            declarations: [app_component_1.AppComponent, app_bannercomponent_1.BaPageTop, app_leftcomponent_1.BaSidebar, bamenu_component_1.BaMenu, bamenuitem_component_1.BaMenuItem, home_component_1.HomeComponent, game_component_1.GameComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

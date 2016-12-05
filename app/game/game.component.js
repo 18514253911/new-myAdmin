@@ -9,26 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var BaMenu = (function () {
-    function BaMenu() {
-        this.menuItems = [{
-                id: "home",
-                name: "canvas倒计时",
-            }, {
-                id: "game",
-                name: "游戏"
-            },
-        ];
+var GameComponent = (function () {
+    function GameComponent() {
     }
-    BaMenu = __decorate([
+    GameComponent.prototype.ngOnInit = function () {
+    };
+    GameComponent = __decorate([
         core_1.Component({
-            selector: 'ba-menu',
-            templateUrl: "./app/left/baMenu/bamenu.html",
-            styleUrls: ["./app/left/baMenu/bamenu.css"]
+            moduleId: module.id,
+            selector: 'my-game',
+            template: '<div style="width:100px;height:100px;background-color:red"></div>'
         }), 
         __metadata('design:paramtypes', [])
-    ], BaMenu);
-    return BaMenu;
+    ], GameComponent);
+    return GameComponent;
 }());
-exports.BaMenu = BaMenu;
-//# sourceMappingURL=bamenu.component.js.map
+exports.GameComponent = GameComponent;
+//# sourceMappingURL=game.component.js.map

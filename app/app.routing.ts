@@ -3,6 +3,8 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent }  from './home/home.component';
+import { GameComponent }  from './game/game.component';
+
 const appRoutes=[
 	{
 		path:'',
@@ -12,6 +14,10 @@ const appRoutes=[
 	{
 		path:'home',
 		component:HomeComponent
+	},
+	{
+		path:'game',
+		component:GameComponent
 	}
 ];
 export default RouterModule.forRoot(appRoutes);
