@@ -1,4 +1,6 @@
-
+/**
+ * Created by ycl on 2016/12/3.
+ */
 
 var digit =
     [

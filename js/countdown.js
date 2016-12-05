@@ -1,7 +1,7 @@
-
+/**
+ * Created by ycl on 2016/12/4.
+ */
 function gettool() {
-
-
     var WINDOW_WIDTH = 2924;
     var WINDOW_HEIGHT = 768;
     var MARGIN_LEFT = 30;
@@ -27,7 +27,7 @@ function gettool() {
         if (nextSeconds !== curSeconds) {
             //绘制彩色小球
             if (parseInt(curHours / 10) != parseInt(nextHours / 10)) {
-                addBalls(MARGIN_LEFT, MARGIN_TOP, parseInt(nextHours / 10));
+                addBalls(MARGIN_LEFT + 0, MARGIN_TOP, parseInt(nextHours / 10));
             }
             if (parseInt(curHours % 10) != parseInt(nextHours % 10)) {
                 addBalls(MARGIN_LEFT + 15 * (RADIUS + 1), MARGIN_TOP, parseInt(nextHours % 10));
@@ -53,8 +53,7 @@ function gettool() {
     };
 
     function uodateBalls() {
-        //noinspection JSDuplicatedDeclaration
-      for (var i = 0; i < balls.length; i++) {
+        for (var i = 0; i < balls.length; i++) {
             balls[i].x += balls[i].vx;
             balls[i].y += balls[i].vy;
             balls[i].vy += balls[i].g;
@@ -64,16 +63,16 @@ function gettool() {
             }
         }
         var cnt = 0;
-        //noinspection JSDuplicatedDeclaration
-      for (var i = 0; i < balls.length; i++) {
+        for (var i = 0; i < balls.length; i++) {
             if (balls[i].x + RADIUS > 0 && balls[i].x - RADIUS < WINDOW_WIDTH) {
                 balls[cnt++] = balls[i];
             }
         }
 
-        while (balls.length > Math.min(400, cnt)) {
+        while (balls.length > cnt) {
             balls.pop(); //删除数组末尾的值
         }
+        console.log(balls.length);
     };
 
     function addBalls(x, y, num) {
@@ -149,8 +148,8 @@ function gettool() {
     return function aa(width, height) {
         var canvas = document.getElementById("canvas");
         var context = canvas.getContext("2d");
-        WINDOW_HEIGHT = window.innerHeight-60;
-        WINDOW_WIDTH = WINDOW_WIDTH-180;
+        WINDOW_HEIGHT = 700;
+        WINDOW_WIDTH = 1400;
         canvas.height = WINDOW_HEIGHT;
         canvas.width = WINDOW_WIDTH;
 
