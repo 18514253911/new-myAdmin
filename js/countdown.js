@@ -50,7 +50,7 @@ function gettool() {
             curShowTimeSeconds = nextShowTimeSeconds;
         }
         uodateBalls();
-    };
+    }
 
     function uodateBalls() {
         for (var i = 0; i < balls.length; i++) {
@@ -73,7 +73,7 @@ function gettool() {
             balls.pop(); //删除数组末尾的值
         }
         console.log(balls.length);
-    };
+    }
 
     function addBalls(x, y, num) {
         for (var i = 0; i < digit[num].length; i++) {
@@ -98,7 +98,7 @@ function gettool() {
         var ret = endTime.getTime() - curTime.getTime();
         ret = Math.round(ret / 1000);
         return ret >= 0 ? ret : 0;
-    };
+    }
 
     function render(ext) {
         ext.clearRect(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -127,7 +127,7 @@ function gettool() {
             ext.fill();
         }
 
-    };
+    }
 
     function renderDigit(x, y, num, ext) {
         ext.fillStyle = "rgb(0,102,153)";
